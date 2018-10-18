@@ -1,4 +1,4 @@
-\ProvidesClass{twentysecondcv}[2017/01/08 CV class]
+\ProvidesClass{twentysecondcv_eng}[2017/01/08 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
@@ -18,6 +18,8 @@
 \RequirePackage{pgffor}
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
+\RequirePackage{fontawesome}
+
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -71,10 +73,14 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
+\newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
+\newcommand{\cvplatzi}[1]{\renewcommand{\cvplatzi}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
+
 
 % Command for printing the contact information icons
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
@@ -103,6 +109,30 @@
 	}
 }
 
+
+% Command for printing languages progress bars
+\newcommand\languages[1]{ 
+	\renewcommand{\languages}{
+		\begin{tikzpicture}
+			\foreach [count=\i] \x/\y in {#1}{
+				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+				\node [above right] at (0,\i+0.4) {\x};
+			}
+		\end{tikzpicture}
+	}
+}
+
+% Command for printing languages text
+\newcommand\languagestext[1]{ 
+	\renewcommand{\languagestext}{
+		\begin{flushleft}
+			\foreach [count=\i] \x/\y in {#1}{ 
+				\x$ \star $\y
+			}
+		\end{flushleft}
+	}
+}
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR LAYOUT
 %----------------------------------------------------------------------------------------
@@ -143,13 +173,18 @@
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvsite\\}
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \cvlinkedin\\}
+			\ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithubAlt}} & \cvgithub\\}  
+			\ifthenelse{\equal{\cvplatzi}{}}{}{\textsc{\Large\icon{\faLightbulbO}} & \cvplatzi\\}  
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \cvmail}
+			%\ifthenelse{\equal{\givenlinkedin}{}}{}{\textsc{\large\icon{\faLinkedin}} & \href{http://www.linkedin.com/in/\givenlinkedin }{\givencvname}\\}
+
 		\end{tabular}
 
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
-			\profilesection{Objective}
+			\profilesection{About me}
 			\begin{flushleft}
 				\aboutme
 			\end{flushleft}
@@ -158,11 +193,15 @@
 		%------------------------------------------------
 
 		\profilesection{Skills}
-
 		\skills
 		\skillstext
 		\scriptsize
-		[Goal oriented, Excellent technical skill, Ability to solve problem quickly, Team Spirit]
+		[Goal oriented, excellent technical skill, ability to solve problem quickly, team spirit]
+		
+		\profilesection{Languages}
+		\languages
+		
+		
 			
 		%------------------------------------------------
 			
