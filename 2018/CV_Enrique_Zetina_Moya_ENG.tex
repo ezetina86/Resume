@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv_eng} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{henry.jpg} % Profile picture
+
+\cvname{Enrique Zetina} % Your name
+\cvjobtitle{Database Specialist} % Job title/career
+\cvdate{March 12 1986} % Date of birth
+\cvaddress{M\'exico, CDMX} 
+% Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{55 38658750} % Phone number
+\cvsite{https://about.me/ezetina} % Personal website
+\cvmail{jenzetin@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Seeking for a position as a computer engineer, expertise in programming and solving problems.
+Desire to work in a reputed company, giving my best to this field and improving my technical 
+and managerial skill.} 
+% To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{English80\%/4},{{{\LaTeX} 90\%}/5.5},{Linux Administrator 70\%/4},{Excel 90\%/5.5},{Oracle DBA 80\%/4.5},{ETL Process 85\%/5},{SQL 95\%/5.9},{PL-SQL 95\%/5.9}}
+
+%------------------------------------------------
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2006-2013}{Bachelor of Computer Technology}{UAM Azc.}{\emph{ Antivirtus and Antispam system implemented in a FPGA.}}
+\end{twenty}
+
+\section{Certifications}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2014}{ORACLE {\normalfont Administration Workshop }}{IPN ESIME.}{}
+	\twentyitem{2014}{ORACLE {\normalfont SQL Fundamentals }}{IPN ESIME.}{}
+\end{twenty}
+
+\section{Courses}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{In course}{{\normalfont Big Data Technical Diploma.}}{Fundaci\'on Carlos Slim.}{}
+     \twentyitem{In course}{{\normalfont MongoDB for Developers}}{Mongo University}{}
+	\twentyitem{2018}{{\normalfont MongoDB Basics}}{Mongo University}{}
+	\twentyitem{2012}{{\normalfont Advanced Conversation Course. }}{QUICK LEARNING.}{}
+	\twentyitem{2011}{{\normalfont Global Course of servers with GNU / Linux. }}{Alcance Empresarial.}{}
+	\twentyitem{2011}{{\normalfont Intermediate-Advanced Linux Course.}}{UAM Azc.}{}
+	\twentyitem{2008}{{\normalfont Systems programming course.}}{ICC.}{}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%begin{twentyshort} % Environment for a short list with no descriptions
+
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2017- To date}{Oracle Senior Developer}{AsTeci}{
+	Banco Azteca, member of the team that developed a project called MER, who identified elements that could cause risk on branches, the purpose was to measure risks to take actions and avoid fines.
+	\newline Devolping PL/SQL code to webapps.
+	\newline Desing database model to support MER system.
+	\newline Code functions, procedures,  views,  sequences, indexes and data model to interact with Frontend and Backend.}
+	\twentyitem{2016-2017}{ Business expansion expert}{Telef\'onica}{Devolping  KPI's for openings.
+	\newline Desing  and implentation  from  software  soutions
+	 mainly using  ORACLE PL/SQL.
+	\newline Dashboard developing to monitor new openings.
+	\newline Reengineering of existing process in order to have better control of sales and incomes.}
+	\twentyitem{2013-2016}{Dealer Channel specialist.}{Telef\'onica}{Devolping  KPIs  and reports for  sales quality area.
+	\newline Desing  and implentation  from  software  soutions
+	 mainly using  PL/SQL and Microsoft SQL Server.
+	\newline Managing Oracle 11g database.}
+	\twentyitem{2012-2013}{Collection Management Analyst}{Telef\'onica}{Reengineering of existing process in order to have 	better control of collection managment.
+	\newline  Managing MySQL database.
+	\newline Budget control.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\end{document} 

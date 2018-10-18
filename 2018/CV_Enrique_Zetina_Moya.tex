@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{henry.jpg} % Profile picture
+
+\cvname{Enrique Zetina} % Your name
+\cvjobtitle{Ingeniero en Computaci\'on} % Job title/career
+\cvdate{12 Marzo 1986} % Date of birth
+\cvaddress{M\'exico, CDMX} 
+% Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{55 2286 6919} % Phone number
+\cvsite{https://about.me/ezetina} % Personal website
+\cvmail{jenzetin@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Resolver de manera creativa, problemas que requieran centralizar, depurar y 
+afianzar datos haciendo uso de tecnolog\'ias de IT,BI y bases de datos, con el fin de contribuir al bienestar de mi pa\'is y la sociedad en general.} 
+% To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Mongo DB 60\%/3.5},{Ingl\'es 75\%/4},{{\LaTeX} 90\%/5.5},{Administraci\'on Linux 70\%/4},{Oracle DBA 70\%/4.5},{Procesos ETL 85\%/5},{Excel 90\%/5.5},{SQL 95\%/5.9},{PL-SQL 95\%/5.9}}
+
+%------------------------------------------------
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Formaci\'on Acad\'emica}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2006-2013}{Licenciatura {\normalfont Ingenier\'ia en Computaci\'on.}}{UAM Azc.}{\emph{Sistema antivirus y antispam en un FPGA.}}
+\end{twenty}
+
+\section{Certificaciones}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2014}{ORACLE {\normalfont Administration Workshop }}{IPN ESIME.}{}
+	\twentyitem{2014}{ORACLE {\normalfont SQL Fundamentals }}{IPN ESIME.}{}
+\end{twenty}
+
+\section{Cursos}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{En curso}{{\normalfont Diplomado T\'ecnico en Big Data. }}{Fundaci\'on Carlos Slim.}{}
+		\twentyitem{2018}{{\normalfont  MongoDB Basics.}}{Mongo University.}{}
+	\twentyitem{2012}{{\normalfont Advanced Conversation Course. }}{QUICK LEARNING.}{}
+	\twentyitem{2011}{{\normalfont Curso de Global de Servidores con GNU/Linux. }}{Alcance Empresarial.}{}
+	\twentyitem{2011}{{\normalfont Linux Intermedio-Avanzado.}}{UAM Azc.}{}
+	\twentyitem{2008}{{\normalfont Curso de Programaci\'on de Sistemas.}}{ICC.}{}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%begin{twentyshort} % Environment for a short list with no descriptions
+
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia profesional}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2017-2018}{Oracle SQL Sr. Developer}{AsTeci}{Banco Azteca, Sistemas de Administraci\'on de Insumos y Procesos.
+	\newline  Proyecto Control Interno de Expedientes (MER).
+	\newline Desarrollo de un sistema permito identificar los elementos generadores de riesgo de cada proceso en sucursales, con el prop\'osito de medir y evaluar el nivel de riesgo operativo integral de las sucursales para poder tomar medidas correctivas y de seguimiento.
+	\newline En el desarrollo de proyecto contribui princpalmente desarrollando la l\'ogica de bases de datos bajo ORACLE 11G R2, program\'e m\'odulos de administraci\'on y funcionamiento del sistema con el uso de funciones, procedimientos, vistas, packages, secuencias, creaci\'on de \'indices, modelado y normalizaci\'on de datos. 
+}
+	\twentyitem{2016-2017}{Coodinador Expansi\'on de Negocio.}{Telef\'onica}{Dise\~no y desarrollo de soluciones de software en proyectos BI con uso de ORACLE PL/SQL.
+	\newline Diese\~no de Dashboards para presentaciones en alta direcci\'on.
+	\newline Implementaci\'on KPI's para el \'area de Expansi\'on Comercial.}
+	\twentyitem{2013-2016}{Especialista en Calidad de Venta.}{Telef\'onica}{Seguimiento  y control de  canales comerciales y redes de distribuci\'on de Telef\'onica M\'exico.
+	\newline Administraci\'on de base de datos ORACLE 11g.}
+	\twentyitem{2012-2013}{Analista de Cobranza.}{Telef\'onica}{Segmentaci\'on de bases de datos de cartera morosa para su distribuci\'on en agencias de cobranza con el uso de bases de datos relacionales y el software \emph{MySQL}.
+	\newline Control y seguimiento de facturaci\'on electr\'onica para agencias de cobranza.}
+	\twentyitem{2008-2009}{Supervisor de Operaciones.}{Telef\'onica}{Supervisor del servicio de Roaming y Servicios Avanzados, para los clientes de contrato de Movistar M\'exico, supervisando la operaci\'on de un grupo de 20 ejecutivos.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\section{Other information}
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
