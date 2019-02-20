@@ -1,7 +1,7 @@
 # Resume
 Copy of my resume in LaTeX.
 
-You can find the licence  in the LICENCE file, special thanks to Carmine Spagnuolo to provide the template for this resume.
+You can find the licence  in the LICENSE file, special thanks to Carmine Spagnuolo to provide the template for this resume.
 
 ## Notes
 
