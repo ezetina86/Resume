@@ -1,0 +1,306 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{ Enrique} % Your first name
+\familyname{Zetina} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{Callejón Central 8, Santa Catarina Azcapotzalco}{CDMX, México​}
+\mobile{(+52) 55 22 86 69 19 }
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{jenzetin@gmail.com}
+\homepage{ezetina86.github.io/Portfolio/}{ezetina86.github.io}
+\extrainfo{\href{https://github.com/ezetina86}{Github: ezetina86}}%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+\extrainfo{\href{https://www.linkedin.com/in/ezetina/}{Linkedin: ezetina}}
+%----------------------------------------------------------------------------------------
+
+\begin{document}%Query
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+%\begin{multicols}{2}
+%
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2020--Ongoing}{Universidad Internacional de la Rioja}{\newline Master Degree in Visual Analytics}{}{}{}  % Arguments not required can be left empty.
+\cventry{2006--2013}{ Universidad Autónoma Metropolitana}{\newline Bachelor of Computer Science}{}{}{} 
+%\cventry{2016}{D.A.V. Public School, Bistupur}{\newline Mathematics and Computer Science}{Class 12}{}{GPA -- 94.00\%}  % 
+%\cventry{2014}{A.D.L.S. Sunshine School, Sakchi}{\newline Mathematics and Computer Science}{Class 10}{}{GPA -- 95.20\%}  %
+%\section{%Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{%Vocational}
+
+\cventry{April 2019--Ongoing}{Lead Systems Engineer}{\textsc{EPAM Systems, Inc}}{Google Cloud Platform Support}{}{
+\begin{itemize}
+\item Provide technical support for Google customers, using GCP products, including Big Data technologies, and related services.
+\item Identify and document product bugs and feature requests, working with internal support teams and customers to implement efficient solutions to their business.
+\item I work closely with internal support teams to improve cloud products at senior level.
+\item Code using programming languages like Python.
+\item  Help customers to develop solutions using Big Data tools like Apache Beam (Dataflow) and Apache Airflow (Composer).
+\item I'm certified as a technical interviewer inside the company.
+\item Create webinars at a global scale to help Epamers obtain the Google Cloud Data Engineer certification.
+\item I participate as a Big Data committee expert, and Cloud Computing committee expert, evaluating EPAMers in their assessment processes to get promotions inside the company.
+\item I'm a mentor in the \textit{Resource Development} program, helping new hires to get experience in Google Cloud and Big data Technologies.
+\end{itemize}}
+
+
+\cventry{April 2018--April 2019}{Oracle Developer}{\textsc{4th Source}}{Express Scripts}{}{
+\begin{itemize}
+\item I worked as part of the transformation team, developing PL/SQL code to migrate existing systems to new platforms.
+\end{itemize}}
+
+%------------------------------------------------
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{Callejón Central 8, Santa Catarina Azcapotzalco}{CDMX, México​}
+\mobile{(+52) 55 22 86 69 19 }
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{jenzetin@gmail.com}
+\homepage{ezetina86.github.io/Portfolio/}{ezetina86.github.io} % The first argument is the url for the clickable link, the secofond argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{\href{https://github.com/ezetina86}{Github: ezetina86}}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+%\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+%\section{Projects}
+
+%\cventry{Jan 2019--Ongoing}{Weakly Supervised Semantic Segmentation using Adversarial Erasing}%{\textit{Prof. Jose Dolz, Ecole de
+%Technologie Superieure, Canada}}{}{}{
+%\begin{itemize}
+%\item Implemented Weakly Supervised Semantic Segmentaion papers using PASCAL VOC 2012 dataset.
+%%\item Working on solving biomedical health problems with MRI and CT images.
+%\item Paper in review at The IEEE International Symposium on Biomedical Imaging (ISBI).
+%\end{itemize}}
+
+%\cventry{May 2018-- Nov 2018}{Metal Morphology Classification using Deep Learning}{\textit{Prof. K.S. Suresh, IIT Roorkee}}{}{}{
+%\begin{itemize}
+%\item Collected Iron and Titanium metal microstructures images.
+%\item Implemented a model with attention for classification of images into respective classes of microstructure.
+%\item Used the weights from various Convolutional layers of VGG16 model for t-SNE plots.
+%\end{itemize}}
+
+
+%\cventry{Aug 2018}{Neural Arithmetic Logic Units \href{https://github.com/sinAshish/NALU-Keras}{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item Implemented the paper \textit{Neural Arithmetic Logic Units} by Trask et. al. in Keras.
+%\item The code does \textit{arithmetic operations} only, for now.
+%\end{itemize}}
+ 
+%\cventry{Aug 2018-- Oct 2018}{MURA (musculoskeletal radiographs) X-Ray Classification \href{https://github.com/sinAshish/Stanford-MURA}{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item Implemented the original paper to reproduce the results.
+%\item Optimized  the hyperparameters to beat the baseline score.
+%\item Used pretrained models like DenseNet50, ResNet169 among others with attention for classification.
+%\end{itemize}}
+ 
+%\cventry{Oct 2018}{Dynamic Memory Networks Plus \href{https://github.com/sinAshish/dmn-plus}%%{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item Implemented the paper \textit{Dynamic Memory Networks for Visual and Textual Question Answering} in PyTorch.
+%\item Model trained on BaBI dataset.
+%\end{itemize}}
+
+%\cventry{May 2018--  Aug 2018}{Simplifying Rough Sketches Using Deep Learning \href{https://github.com/sinAshish/Rough-Sketch-Simplification-Using-FCNN}{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item Implemented the paper \textit{Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup} by Simo-Serra et. al in PyTorch.
+%\item Implemented an Encoder-Decoder architecture.
+%\end{itemize}}
+
+%\cventry{ Nov 2018}{Quora Insincere Question Classification}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item Implemented a CNN-LSTM architecture with attention to detect toxic content in online media. 
+%\item Achieved an F1-Score of 0.73.
+%\end{itemize}}
+
+%\cventry{ Mar 2017}{Gaana (Songs) Downloader \href{https://github.com/sinAshish/Gaana-Downloader}{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item A script to download all the songs from \href{https://www.gaana.com}{gaana.com} by just entering the album name.
+%\end{itemize}}
+%
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Achievements}
+
+%\cventry{July 2018}{Humpback Whale Identification Challenge}{\textit{Kaggle}}{}{}{
+%\begin{itemize}
+%\item Ranked 64 among 528 teams( TOP 13\%) in the Whale Identification Challenge.
+%\item Used Transfer Learning with ResNet50.
+%\end{itemize}}
+
+%\cventry{Oct 2018}{TGS Salt Identification Challenge}{\textit{Kaggle}}{}{}{
+%\begin{itemize}
+%\item Ranked 589 among 2754 teams( TOP 22\%) in the task to segment salt deposits beneath Earth's surface.
+%\item Used UNet with ResNet50 as encoder.
+%\end{itemize}}
+
+%\cventry{Aug 2018}{Home Credit Default Risk}{\textit{Kaggle}}{}{}{
+%\begin{itemize}
+%\item Ranked 1685 among 7198 teams( TOP 24\%) in the Home Credit Default Risk Challenge.
+%\item Used LightGBM and XGBoost with weighted ensemble.
+%\end{itemize}}
+
+%\cventry{Nov 2018}{Human Protein Atlas Image Classification}{\textit{Kaggle}}{}{}{
+%\begin{itemize}
+%\item Ranked in the TOP 17\%(now) in the multiclass multilabel protein classification challenge.
+%\item Used ResNet50 as base model.
+%\end{itemize}}
+
+
+%\cventry{Oct 2018}{Quick Draw! Doodle Recognition Challenge}{\textit{Kaggle}}{}{}{
+%\begin{itemize}
+%\item Ranked in the TOP 29\% in the Doodle Recognition Challenge.
+%\item Trained an ImageNet model from scratch, by constructing images from stokes.
+%\end{itemize}}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+\cvitem{Communication}{English(\href{https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale}{B2}), Spanish(Native)}
+\cvitem{Programming}{Python, SQL}
+\cvitem{Cloud}{Google Cloud, Amazon Web Services, Azure}
+\cvitem{GCP Big Data}{BigQuery, Apache Beam (Dataflow), Apache Airflow (Composer), Hadoop (Dataproc), Data Fusion, PubSub}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Certifications}
+
+\cvitem{AWS}{\href{https://www.credly.com/badges/3e80868a-72e8-4bb7-88d3-55de4956ee4d/public_url}{Cloud Practitioner}}
+\cvitem{AWS}{\href{https://www.credly.com/badges/e3e89f3c-e85f-48d1-86bd-cc410b523873/public_url}{Solutions Architect}}
+\cvitem{Google Cloud}{\href{https://www.credential.net/1851a8c5-05d3-4bc2-998c-7209c348ff92}{Associate Cloud Engineer}}
+\cvitem{Google Cloud}{\href{https://www.credential.net/1ff1dec6-30da-48d6-8b69-9c5dc639a76f}{Professional Cloud Architect}}
+\cvitem{Google Cloud}{\href{https://www.credential.net/c54b9c8f-57eb-46ac-996c-72bfa2b26609}{Professional Data Engineer}}
+%\cvitem{Azure}{\href{https://www.credly.com/badges/4cea8e7b-a364-425d-9da6-08aa5e92c1e0}{Fundamentals}}
+\cvitem{Azure}{\href{https://www.credly.com/badges/881a5456-1d9f-4547-999c-8009184f395e}{Data Engineer Associate}}
+\cvitem{Azure}{\href{https://www.credly.com/badges/294f349f-e55b-455f-8662-e5fbdf09217d}{AI Engineer Associate}}
+\cvitem{Astronomer}{\href{https://www.credly.com/badges/3b6ee162-1f2e-4d6e-9385-0d6929f35441}{ Apache Airflow Fundamentals}}
+\cvitem{Oracle}{\href{https://www.credly.com/badges/1fc5da46-f9b1-4839-9402-ebece479dbae}{Database 11g Administrator Certified Associate}}
+%\section{Extra Curriculars}
+
+%\cventry{Apr 2018}{Vision and Language Group}{\textit{Executive Member}}{}{}{ The group aims to foster Deep Learning research among students by conducting discussions and implementations on various Research Papers in the field of Computer Vision and NLP. I implemented a paper on DC-GAN and Neural Style Transfer.
+%}
+
+%\cventry{Oct 2017}{Enactus IIT Roorkee Chapter}{\textit{Executive Member}}{}{}{ The Campus group works towards Socail Entreprenership. I was a part of the Kaagaz Project.
+%}
+
+%\cventry{Jan 2018}{Academic Reinforcement Program}{\textit{Teaching Assistant}}{}{}{ Taught General Chemistry(CYN-006) to a batch of 86 students.
+%}
+%\cventry{Jul 2018}{Academic Reinforcement Program}{\textit{Teaching Assistant}}{}{}{ Taught Intro to Computer Programming in C++(MTN-103) to a batch of 80 students.
+%}
+
+%\cventry{Feb 2018}{Sangram IIT Roorkee}{\textit{Web Developer}}{}{}{ Developed the website for Sangram, IIT Roorkee, the official annual Sports fest of IIT Roorkee.
+%}
+
+%\cventry{Dec 2015}{Quizense}{\textit{Founder}}{}{}{ Started a start-up along with 3 others that aimed to conduct Quizzes for various schools and fests.
+%}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%U
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Cycling}{Hiking}
+%\cvlistdoubleitem{Sketching}{Gaming}
+%\cvlistitem{Quizzing}
+%----------------------------------------------------------------------------------------
+
+%\section{References}
+
+%\begin{multicols}{2}
+%\cventry{}{K.S Suresh}{\newline Assistant Professor}{\newline Metallurgical and Materials %Engg., IIT Roorkee}{\newline suresfmt@iitr.ac.in}{}
+%\columnbreak
+%\cventry{}{Anu Chandra}{\newline CEO}{\newline Ryelore AI}{\newline anu@ryelore.com}{ }
+%\end{multicols}
+%\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
+
+%\cventry{}{B.S.S Daniel}{\newline Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline s4danfmt@iitr.ac.in}{ }
+\end{document}
