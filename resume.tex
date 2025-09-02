@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\definecolor{darkteal}{HTML}{008080}
+\colorlet{color1}{darkteal}
+\colorlet{color2}{darkteal}
+\renewcommand{\namefont}{\fontsize{38}{40}\selectfont\color{color1}}
+\renewcommand{\sectionfont}{\Large\bfseries\color{color1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
+\usepackage{hyperref}
+
+% Personal data
+\firstname{Enrique}
+\familyname{Zetina}
+\mobile{(+1) 901 341 3232}
+\email{jenzetin@gmail.com}
+\homepage{www.ezetina.com}
+\social[linkedin]{ezetina}
+\social[github]{ezetina86}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Summary}
+\cvitem{}{Certified Cloud Architect and Python Developer with over 10 years of experience leading teams and delivering high-impact projects. Passionate about building innovative, scalable, and efficient cloud solutions on GCP, AWS, and Azure. Proven expertise in DevOps, Big Data, FinOps, and automation using tools like Terraform and Airflow to architect robust infrastructures and seamless CI/CD pipelines for major enterprise clients.}
+
+\section{Professional Experience}
+\cventry{Apr 2025--Present}{Cloud Platform Developer}{Grainger}{}{}{
+\begin{itemize}
+    \item Implemented cloud governance policies and controls using Infrastructure as Code (IaC).
+    \item Developed and maintained APIs and automation services to enhance governance and cost optimization.
+    \item Contributed to FinOps initiatives, including cost allocation, optimization, and reporting processes.
+    \item Made architectural decisions to ensure scalable, secure, and cost-efficient cloud solutions.
+\end{itemize}}
+
+\cventry{Jul 2024--Mar 2025}{Development Team Lead}{Whirlpool US}{}{}{
+\begin{itemize}
+    \item Oversaw and guided the development team, conducted code reviews, and ensured adherence to best practices.
+    \item Architected and developed reusable Terraform modules to enhance efficiency and consistency.
+    \item Managed the DevOps lifecycle, including writing CI/CD pipelines and managing deployments with Bitbucket, GitLab, and GitHub.
+    \item Co-owned infrastructure architectural decisions on GCP and communicated their impact to stakeholders.
+\end{itemize}}
+
+\cventry{Oct 2023--Jul 2024}{Cloud Platform Architect}{Procter \& Gamble US}{}{}{
+\begin{itemize}
+    \item Designed, implemented, and optimized GCP solutions for enterprise-level applications.
+    \item Managed GCP infrastructure for load balancing (ILB, XLB) and Private Service Connect (PSC).
+    \item Built and maintained Apigee X organizations, API proxies, and products.
+    \item Deployed over 500 Cloud Run services via secure CI/CD pipelines using GitHub Actions.
+\end{itemize}}
+
+\cventry{Sep 2023--Nov 2023}{Engineering Team Lead}{EPAM Systems, Inc.}{}{}{
+\begin{itemize}
+    \item Led team onboarding, training, and access management.
+    \item Provided support for AWS RDS databases, ensuring optimal performance.
+    \item Developed and maintained Jenkins and GitLab CI/CD pipelines for automated deployments.
+\end{itemize}}
+
+\cventry{Nov 2022--Jun 2023}{Developer Team Lead}{AutoZone, Inc}{}{}{
+\begin{itemize}
+    \item Led the development of an eCommerce search platform on GCP.
+    \item Implemented complex solutions using Java, SpringBoot, Cloud Functions, and Dataflow.
+    \item Worked with Apache Lucene and Apache Solr for search functionality.
+\end{itemize}}
+
+\cventry{March 2022--September 2022}{Lead Systems Engineer}{EPAM Systems, Inc.}{Equifax Key Developer}{}{
+\begin{itemize}
+    \item Led the development of ML models using Vertex AI, including AutoML and custom models.
+    \item Designed and implemented architectural solutions for GCP Vertex AI environments.
+    \item Deployed models to standard and private endpoints, ensuring security with CMEK.
+\end{itemize}}
+
+\cventry{April 2019--September 2022}{Senior Systems Engineer}{EPAM Systems, Inc.}{Google Cloud Platform Support}{}{
+\begin{itemize}
+    \item Provided expert-level technical support for Google Cloud customers on products including BigQuery, Dataflow, Composer, and Dataproc.
+    \item Mentored junior engineers in Big Data topics and GCP for Google clients.
+    \item Automated cloud deployments for customers using Terraform.
+\end{itemize}}
+
+\section{Education}
+\cventry{2020--2022}{Master's Degree in Big Data and Visual Analytics}{Universidad Internacional de la Rioja}{}{}{}
+\cventry{2006--2013}{Bachelor of Computer Science}{Universidad Autónoma Metropolitana}{}{}{}
+
+\section{Technical Skills}
+\cvitem{Cloud Platforms}{Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure}
+\cvitem{DevOps \& IaC}{Terraform, Docker, CI/CD (Jenkins, GitLab, GitHub Actions, Bitbucket)}
+\cvitem{Big Data \& Databases}{BigQuery, Dataflow, Composer, Dataproc, Apache Airflow, Apache Beam, PostgreSQL, Cloud SQL, AWS RDS}
+\cvitem{API Management}{Apigee X}
+\cvitem{Machine Learning}{Vertex AI, AWS Bedrock}
+\cvitem{Programming \& Frameworks}{Python, Java, SQL, FastAPI, Flask, Langchain, SpringBoot}
+\cvitem{Languages}{English (B2 +), Spanish (Native)}
+
+\section{Certifications}
+\cvitem{Google Cloud}{\href{https://credential.net/675b715d-d013-479c-a3e9-5caf78ef987a?key=283a0473e3fc51622d2fae2fb00b2e002859c6404021ee6c5d281df64df0205d}{GCP Associate Cloud Engineer}, \href{https://www.credly.com/badges/4391fd42-ab30-4155-91e7-88160b8847a5}{GCP Cloud Digital Leader}, \href{https://www.credly.com/badges/a2ef557f-34b5-452e-8b09-ef786df1ee2a}{GCP Generative AI Leader}, \href{https://www.credential.net/f704d8d1-1fc2-4420-84e8-9ac84d684acc\#acc.e4cDMxR9}{GCP Professional Cloud DevOps Engineer}}
+\cvitem{AWS}{\href{https://www.credly.com/badges/8a66812d-63bd-4e3c-a2ff-5067f1a27321}{AWS Certified Cloud Practitioner}}
+\cvitem{Microsoft}{\href{https://www.credly.com/badges/4cea8e7b-a364-425d-9da6-08aa5e92c1e0}{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+\cvitem{HashiCorp}{\href{https://www.credly.com/badges/a77cf6de-d9d7-4900-9b27-cb8ab6939c15}{HashiCorp Certified: Terraform Associate}}
+\cvitem{Astronomer}{\href{https://www.credly.com/badges/3b6ee162-1f2e-4d6e-9385-0d6929f35441}{Astronomer Certification for Apache Airflow Fundamentals}}
+
+\end{document}
