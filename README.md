@@ -1,21 +1,29 @@
-# Enrique Zetina's Resume
+# Enrique Zetina — Resume
 
-This repository contains the LaTeX source for Enrique Zetina's resume.
+LaTeX source for Enrique Zetina's resume. Built with [`moderncv`](https://ctan.org/pkg/moderncv) (casual style) and compiled to `Enrique_Zetina.pdf`.
 
-## How to Compile
+## Prerequisites
 
-To generate the PDF of the resume, you need to have a LaTeX distribution installed on your system (e.g., [MacTeX](https://www.tug.org/mactex/) for macOS, [TeX Live](https://www.tug.org/texlive/) for Linux/Windows, or [MiKTeX](https://miktex.org/) for Windows).
+A LaTeX distribution is required:
+- **macOS**: [MacTeX](https://www.tug.org/mactex/)
+- **Linux**: [TeX Live](https://www.tug.org/texlive/)
+- **Windows**: [MiKTeX](https://miktex.org/)
 
-Once you have a LaTeX distribution installed, you can compile the resume by running the following command in your terminal:
+## Build
+
+```bash
+make          # compile → Enrique_Zetina.pdf
+make clean    # remove auxiliary files
+make open     # open PDF (macOS)
+```
+
+Or manually:
 
 ```bash
 pdflatex -jobname="Enrique_Zetina" resume.tex
+pdflatex -jobname="Enrique_Zetina" resume.tex   # run twice for cross-references
 ```
 
-This command will create the PDF with the filename `Enrique_Zetina.pdf`.
+## Output
 
-You may need to run the command twice to ensure all cross-references are correctly generated.
-
-## Example
-
-You can see an example of the generated PDF here: [Enrique_Zetina.pdf](Enrique_Zetina.pdf).
+[Enrique_Zetina.pdf](Enrique_Zetina.pdf)
