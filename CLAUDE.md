@@ -28,7 +28,7 @@ The active resume is `resume.tex` — a single-file LaTeX document using the `mo
 6. **Certifications** — grouped by provider with Credly/credential.net hyperlinks
 
 ### Key content facts (keep in sync when editing)
-- **Certifications**: 11 total (6 GCP, 2 AWS, 1 Azure, 1 HashiCorp, 1 Astronomer)
+- **Certifications**: 13 total (7 Google Cloud, 2 AWS, 1 Azure, 1 HashiCorp, 1 Astronomer, 1 Anthropic)
 - **Years of experience**: 7 (Apr 2019 → present)
 - **Notable metrics**: 500+ Cloud Run services (P&G), 15M+ clients (RBC), 50M+ queries/month (AutoZone)
 - **Cert count in Value Proposition**: update if a new certification is added
