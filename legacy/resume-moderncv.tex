@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\definecolor{darkteal}{HTML}{008080}
+\colorlet{color1}{darkteal}
+\colorlet{color2}{darkteal}
+\renewcommand{\namefont}{\fontsize{38}{40}\selectfont\color{color1}}
+\renewcommand{\sectionfont}{\Large\bfseries\color{color1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
+\usepackage{hyperref}
+
+% Personal data
+\firstname{Enrique}
+\familyname{Zetina}
+\address{Memphis, Tennessee}{(Open to relocation)}
+\mobile{(+1) 901 341 3232}
+\email{jenzetin@gmail.com}
+\homepage{www.ezetina.com}
+\social[linkedin]{ezetina}
+\social[github]{ezetina86}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Value Proposition}
+\cvitem{}{Senior Cloud Architect and 13x Certified Engineer with 7 years designing enterprise-grade, multi-cloud ecosystems across GCP, AWS, and Azure for Fortune 500 companies and regulated financial institutions. Specializing in the intersection of Generative AI and agentic AI architecture --- including Anthropic Claude-powered systems --- FinOps-driven cloud governance, and IaC-powered DevOps; from orchestrating 500+ Cloud Run services at P\&G to leading GCP compliance and migration workstreams for RBC's 15M+ global clients. Recognized for architecting cost-optimized, AI-augmented platforms that bridge LLM integration, Big Data engineering, and automated governance to deliver measurable business impact at enterprise scale.}
+
+\section{Professional Experience}
+\cventry{Feb 2026--Present}{Cloud Platform Developer}{EPAM Systems, Inc.}{Royal Bank of Canada (RBC)}{}{\vspace{-0.5em}
+\begin{itemize}
+    \item Spearheading GCP platform assessment, compliance, and migration workstreams for one of Canada's largest financial institutions, safeguarding cloud operations that serve 15M+ global clients.
+    \item Produced comprehensive GCP findings reports and benchmarked cloud capabilities against Azure and AWS, delivering prioritized recommendations that directly inform RBC's multi-year cloud strategy.
+    \item Architected governance frameworks for Firebase, Google Analytics, and Google Play environments, standardizing onboarding, provisioning, CI/CD workflows, and user access controls across application teams.
+    \item Leading cross-functional migration of Firebase application teams to RBC's Quarantine GCP organization, coordinating Product, Cloud Support, SRE, Cloud Security, and engineering teams to deliver a phased migration plan underpinned by a hardened security baseline.
+\end{itemize}}
+
+\cventry{Apr 2025--Jan 2026}{Cloud Platform Developer}{EPAM Systems, Inc.}{W. W. Grainger, Inc.}{}{
+\begin{itemize}
+    \item Engineered enterprise cloud governance policies via Terraform IaC, establishing multi-cloud compliance guardrails that reduced policy-violation incidents by $\sim$40\% across engineering divisions.
+    \item Architected REST APIs and automation services for FinOps reporting pipelines, cutting manual cost-allocation overhead by $\sim$60\% and enabling near-real-time cloud spend visibility across business units.
+    \item Drove cloud cost optimization using CloudZero, identifying $\sim$18\% in cloud waste through granular attribution, directly improving Grainger's cloud ROI.
+    \item Delivered architectural recommendations balancing scalability, security, and cost-efficiency, contributing to $\sim$22\% reduction in monthly cloud expenditure.
+\end{itemize}}
+
+\cventry{Jul 2024--Mar 2025}{Development Team Lead}{EPAM Systems, Inc.}{Whirlpool Corporation US}{}{
+\begin{itemize}
+    \item Elevated a cross-functional engineering team through structured code reviews and mentorship, reducing critical defect rate by $\sim$35\% while accelerating sprint velocity.
+    \item Architected a library of reusable Terraform modules adopted across 6+ project teams, cutting infrastructure provisioning time from days to hours and enforcing enterprise-wide consistency.
+    \item Owned end-to-end DevOps lifecycle across Bitbucket, GitLab, and GitHub Actions, maintaining 99.5\%+ pipeline reliability for production workloads serving 10M+ users.
+    \item Translated complex GCP architectural decisions into executive-level communications, securing stakeholder alignment on 4 major platform initiatives impacting multi-year roadmap.
+\end{itemize}}
+
+\cventry{Oct 2023--Jul 2024}{Cloud Platform Architect}{EPAM Systems, Inc.}{The Procter \& Gamble Company (P\&G)}{}{
+\begin{itemize}
+    \item Architected enterprise GCP network infrastructure---ILB, XLB, and Private Service Connect---for 30+ mission-critical applications, improving cross-region availability and reducing network latency by $\sim$25\%.
+    \item Scaled Apigee X platform to support 120+ API proxies and products, enabling governed API consumption across P\&G's global developer ecosystem and reducing API integration time by $\sim$40\%.
+    \item Orchestrated the deployment of 500+ Cloud Run services via GitHub Actions CI/CD pipelines, achieving 99.8\% deployment success rate and reducing release cycle time from weeks to hours.
+\end{itemize}}
+
+\cventry{Sep 2023--Nov 2023}{Engineering Team Lead}{EPAM Systems, Inc.}{}{}{
+\begin{itemize}
+    \item Accelerated onboarding for 8 engineers, cutting time-to-productivity by $\sim$50\% through structured training programs and automated access provisioning.
+    \item Stabilized AWS RDS production databases by resolving critical performance bottlenecks, reducing query latency by $\sim$40\% and eliminating unplanned downtime.
+    \item Standardized automated deployments across Jenkins and GitLab CI/CD pipelines, enabling consistent, zero-downtime releases for 12+ services.
+\end{itemize}}
+
+\cventry{Nov 2022--Jun 2023}{Developer Team Lead}{EPAM Systems, Inc.}{AutoZone, Inc.}{}{
+\begin{itemize}
+    \item Spearheaded development of a GCP-native eCommerce search platform serving 50M+ product queries monthly, using Java, SpringBoot, Cloud Functions, and Dataflow to deliver sub-second search response times.
+    \item Engineered high-performance search indexing and ranking with Apache Lucene and Apache Solr, improving product discovery relevance by $\sim$30\% and driving measurable uplift in conversion rate.
+    \item Built scalable Dataflow pipelines processing 200GB+ of product catalog data daily, enabling real-time inventory search across 2M+ SKUs for AutoZone's digital storefront.
+\end{itemize}}
+
+\cventry{Mar 2022--Sep 2022}{Lead Systems Engineer}{EPAM Systems, Inc.}{Equifax}{}{
+\begin{itemize}
+    \item Pioneered ML model development on Vertex AI---spanning AutoML and custom training---delivering 8 production models that powered credit risk scoring for millions of Equifax consumers.
+    \item Designed Vertex AI environment architecture with CMEK-secured standard and private endpoints, achieving enterprise-grade data security compliance for a regulated financial institution.
+    \item Reduced model deployment cycle by $\sim$65\% by architecting automated Vertex AI pipelines, accelerating time-to-insight for data science teams.
+\end{itemize}}
+
+\cventry{Apr 2019--Mar 2022}{Senior Systems Engineer}{EPAM Systems, Inc.}{Google Cloud Platform Support}{}{
+\begin{itemize}
+    \item Delivered expert-level GCP technical support across BigQuery, Dataflow, Composer, and Dataproc for Google's strategic enterprise customers, maintaining a 97\% customer satisfaction (CSAT) score.
+    \item Mentored 8+ junior engineers in Big Data and GCP best practices, reducing team escalation rate by $\sim$35\% and building internal capability aligned to Google's support SLAs.
+    \item Automated Terraform-based cloud deployments for 40+ enterprise customers, eliminating manual provisioning errors and reducing deployment time by $\sim$50\%.
+\end{itemize}}
+
+\section{Projects}
+\cventry{2024--Present}{Creator \& Maintainer}{Exam Generator}{\href{https://exam-generator.ezetina.com/exams}{exam-generator.ezetina.com}}{}{
+\begin{itemize}
+    \item Built a full-stack AI-augmented exam platform (Astro + FastAPI + MongoDB Atlas) using prompt engineering and NotebookLM deep research to generate high-quality question banks across 10+ certification domains, directly enabling colleagues and friends to successfully pass cloud certification exams.
+    \item Architected a high-performance Island Architecture frontend achieving $>$95 Lighthouse score and $<$1.5s FCP, backed by a FastAPI scoring engine with session management, practice mode, and performance analytics.
+    \item Provisioned complete infrastructure via Terraform IaC with CDN integration and multi-stage Docker builds, automated through GitHub Actions CI/CD with Playwright E2E tests, Lighthouse CI, and semantic versioning with rollback capabilities.
+\end{itemize}}
+
+\cventry{2025--Present}{GCP Infrastructure Architect}{Belarusian-Jewish Cultural Heritage Digital Museum}{\href{https://belarusianjewish.com}{belarusianjewish.com}}{}{
+\begin{itemize}
+    \item Architected complete GCP infrastructure-as-code using Terraform from greenfield --- VPC, Compute Engine (Drupal CMS + GitLab runner), Cloud Storage, IAM, Cloud NAT, and firewall rules --- delivering a production-ready environment with zero pre-existing cloud infrastructure.
+    \item Engineered GitLab CI/CD pipelines with Workload Identity Federation for keyless authentication, incorporating automated validation, planning, and approval gates for controlled, auditable deployments.
+    \item Implemented enterprise-grade security posture (least-privilege IAM, encrypted secrets, network isolation, audit logging) and produced full technical documentation --- architecture diagrams, pipeline flows, and operational runbooks --- enabling sustainable maintenance by non-cloud-specialist volunteers.
+\end{itemize}}
+
+\section{Education}
+\cventry{2020--2022}{Master's Degree in Big Data and Visual Analytics}{Universidad Internacional de la Rioja}{}{}{}
+\cventry{2006--2013}{Bachelor of Computer Science}{Universidad Autónoma Metropolitana}{}{}{}
+
+\section{Areas of Expertise}
+\cvitem{AI \& Generative AI}{Vertex AI (AutoML, Custom Training, Pipelines, Model Registry), AWS Bedrock, AWS SageMaker, Langchain, Foundation Models, Prompt Engineering, Responsible AI, CMEK-secured Endpoints}
+\cvitem{Cloud Governance \& FinOps}{FinOps Framework (Linux Foundation), CloudZero, Terraform IaC, Cost Allocation \& Optimization, Policy Enforcement, Multi-Cloud Compliance, HA/DR Design, Cloud Armor}
+\cvitem{DevOps \& CI/CD}{GitHub Actions, GitLab CI, Jenkins, Bitbucket Pipelines, Docker, Temporal, Terraform Modules, IaC at Scale}
+\cvitem{Distributed Systems \& Big Data}{BigQuery, BigQuery ML, Pub/Sub, Datastream, Dataflow, Apache Beam, Dataproc, Apache Airflow, Cloud Composer, Data Catalog, dbt}
+\cvitem{Cloud Platforms}{Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure}
+\cvitem{API \& Application Development}{Apigee X, FastAPI, Flask, SpringBoot, Go (Golang)}
+\cvitem{Databases}{PostgreSQL, Cloud SQL, AWS RDS}
+\cvitem{Programming}{Python, Go, Java, SQL}
+\cvitem{Languages}{English (Professional --- B2+), Spanish (Native)}
+
+\section{Certifications}
+\cvitem{Google Cloud}{\href{https://www.credly.com/badges/e49df6ba-8768-4756-82ad-92c8900b8a81/public_url}{GCP Professional Cloud Architect}, \href{https://www.credly.com/badges/4ce10b30-39e6-4e2f-8f89-bfa9fa81af7d/public_url}{GCP Professional Data Engineer}, \href{https://www.credly.com/earner/earned/share/cd317e68-818d-4336-8720-e12c6ff3fee7}{GCP Professional Cloud DevOps Engineer}, \href{https://credential.net/675b715d-d013-479c-a3e9-5caf78ef987a?key=283a0473e3fc51622d2fae2fb00b2e002859c6404021ee6c5d281df64df0205d}{GCP Associate Cloud Engineer}, \href{https://www.credly.com/badges/a9dfd998-5247-4630-8ed7-868e61653f37/public_url}{Certified Partner Specialist --- Gemini Enterprise Deployment}, \href{https://www.credly.com/badges/a2ef557f-34b5-452e-8b09-ef786df1ee2a}{GCP Generative AI Leader}, \href{https://www.credly.com/badges/4391fd42-ab30-4155-91e7-88160b8847a5}{GCP Cloud Digital Leader}}
+\cvitem{AWS}{\href{https://www.credly.com/badges/8a66812d-63bd-4e3c-a2ff-5067f1a27321}{AWS Certified Cloud Practitioner}, AWS Certified AI Practitioner}
+\cvitem{Microsoft}{\href{https://www.credly.com/badges/4cea8e7b-a364-425d-9da6-08aa5e92c1e0}{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+\cvitem{HashiCorp}{\href{https://www.credly.com/badges/bd2eeffd-66a7-4767-9958-6024c00c4f06/public_url}{HashiCorp Certified: Terraform Associate}}
+\cvitem{Astronomer}{\href{https://www.credly.com/badges/3b6ee162-1f2e-4d6e-9385-0d6929f35441}{Astronomer Certification for Apache Airflow Fundamentals}}
+\cvitem{Anthropic}{\href{https://verify.skilljar.com/c/vjo8xynofbsp}{Claude Certified Architect -- Foundations}}
+
+\end{document}
